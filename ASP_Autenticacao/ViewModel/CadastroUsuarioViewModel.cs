@@ -17,7 +17,7 @@ namespace ASP_Autenticacao.ViewModel
 
         [Required(ErrorMessage = "Informe seu login")]
         [MaxLength(50, ErrorMessage = "O login deve conter no máximo 50 caracteres")]
-        [Remote("Action", "Autenticacao", ErrorMessage = "O login já existe!")]
+        //[Remote("Action", "Autenticacao", ErrorMessage = "O login já existe!")]
         public string Login { get; set; }
 
         [Required(ErrorMessage = "Informe a senha")]
